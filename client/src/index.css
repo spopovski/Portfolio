@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+html, body {
+  font-family: system-ui;
+}
+.card-body{
+  position: initial;
+}
+.messages{
+  overflow-y: scroll;
+  max-width: 100%;
+  position:absolute;
+  top: 150px;
+  bottom:60px;
+  word-break:break-all;
+  width: 80%;
+
+
+}
+.sender{
+  margin-top: 10px;
+  text-align: left;
+  font-size: 21px;
+  width: 90%;
+  
+}
+.author{
+  font-weight: 600;
+  color:#343a40;
+  font-size: 15px;
+}
+.message{
+  position: inherit;
+  word-break:break-all;
+  color: rgba(255,255,255,.5);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  background: #343a40;
+  width: fit-content;
+}
+
+.footer{
+  bottom: 0;
+  left:0;
+  right:0;
+  height: 3.0rem;  
+  display: inline-flex;
+  position: fixed;
+  clear: both;
+}
+
+
+.list-table>table{
+  display: block;
+}
+
+.list-table>tbody{
+  
+  color: rgba(255, 255, 255, 0.5);
+  border: rgba(255, 255, 255, 0.5);
+  background-color: rgb(52, 58, 64);
+  display:block;
+  overflow-y:auto;
+  overflow-x: hidden;
+  max-height: calc(100vh - 80px - 300px);
+}
+.list-table>thead{
+  display: block;
+  border-right-width: 6px;
+  overflow-y:auto;
+
+}
+.list-table>tr{
+  width: 100%;
+  box-sizing: border-box;
+  border-right-width: 6px;
+}
+
+.validation-error{
+  border-radius: 5px;
+  padding: 1px 1px 0px 1px; 
+  margin: 0px;
+  height: auto;
+  color: #D8000C;
+  background-color: #FFBABA;
+}
